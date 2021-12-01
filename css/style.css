@@ -208,6 +208,8 @@ main {
 /* Section "accomodation" */
 .accomodation {
     display: flex;
+    flex-wrap: nowrap;
+    
     /* flex-wrap: wrap-reverse; */
     
 }
@@ -218,9 +220,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 75%;
-    padding: 10px;
+    width: 60%;
+    padding: 5px;
     background-color: var(--clr-light-grey);
+    
 }
 
 /* prend toute la largeur du bloc */
@@ -240,7 +243,7 @@ Etoiles bleues ou grises
 
 /* Carte hébergement */
 .accomodation-card {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     height: 190px;
     width: 27%;
     border: white 4px solid;
@@ -251,7 +254,7 @@ Etoiles bleues ou grises
 .more{
     width: 96%;
     margin-left: 4%;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
 }
 
 /* Carte hébergement : image */
@@ -287,7 +290,8 @@ Etoiles bleues ou grises
 .popular {
     width: 25%; 
     padding: 10px;
-    gap: 20px 20px;
+    margin-left: 50px;
+    border-radius: 25px;
     background-color: var(--clr-light-grey);
 }
 
@@ -296,11 +300,16 @@ Etoiles bleues ou grises
     background-color: white;
     padding: 5px;
     border-radius: 20px;
+
+}
+
+.popular-card-details {
+    width: 60%;
 }
 
 .popular-card img {
-    height: 60%;
-    width: 100%;
+    height: 20px;
+    width: 40%;
     object-fit: cover;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
