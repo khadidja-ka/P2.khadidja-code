@@ -12,19 +12,21 @@
 4. Footer
 */
 
-
-
 /* variable CSS */
 :root {
-    --clr-blue: #0065FC;
-    --clr-light-blue: #DEEBFF;
-    --clr-light-grey: #F2F2F2;
+    --clr-blue: #0065fc;
+    --clr-light-blue: #deebff;
+    --clr-light-grey: #f2f2f2;
+    --roundness: ;
 }
-
 
 /*----------------------- 1. GENERAL ---------------------------- */
 * {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    font-size: 12px;
 }
 
 a {
@@ -32,11 +34,20 @@ a {
     color: inherit; /*enleve la couleur bleu des liens */
 }
 
+.fas.fa-star.active {
+    color: var(--clr-blue);
+}
 
+.fas.fa-star{
+    color: var(--clr-light-grey);
+}
 /*------------------------- 2. HEADER ----------------------------*/
 nav {
     display: flex;
     justify-content: space-between;
+}
+
+nav img {
 }
 
 .menu {
@@ -51,9 +62,8 @@ nav {
 
     height: 90px; /* 90px parce que même hauteur que le logo */
     width: 190px;
-    border-top: 2px solid #FFFFFF;
+    border-top: 2px solid #ffffff;
 }
-
 
 .menu-link:hover {
     color: var(--clr-blue);
@@ -61,29 +71,26 @@ nav {
 }
 
 header {
-    margin: 0 3.5% ;
+    margin: 0 3.5%;
 }
 
 main {
-    margin: 0 3.5% ;
+    margin: 0 3.5%;
 }
 
-
-/* -------------------------3.1 Section : search -------------------------*/
+/* -----------------------3.1 Section : search ---------------------*/
 
 /* Champ de recherche */
 .search-input {
     display: flex;
     padding-right: 1px;
     margin-bottom: 20px;
-
 }
 
 .search-input:focus {
     outline: none;
-    border: 1px solid var(--clr-blue)
+    border: 1px solid var(--clr-blue);
 }
-
 
 /* Icônes Map */
 .search-map {
@@ -94,22 +101,19 @@ main {
     width: 10px;
     height: 6.5px;
     border-radius: 10px 0px 0px 10px;
-    background-color: var(--clr-light-grey)
+    background-color: var(--clr-light-grey);
 }
 
-
-/*--------------------- Champ de recherche ---------------- */
+/*----------------------- Champ de recherche ----------------------- */
 .search-input input {
     height: 35px;
     border: 1px solid var(--clr-light-grey);
     padding-left: 10px;
     font-weight: 700;
     font-weight: bolder;
-    
-    
 }
 
-.search-div{
+.search-div {
     font-weight: bolder;
 }
 
@@ -126,12 +130,11 @@ main {
     display: none;
 }
 
-.search-button:hover{
+.search-button:hover {
     transform: scale(1.05);
 }
 
-
-/* ------------------------- FILTRES DE RECHERCHES -------------------------*/
+/* ----------------------- FILTRES DE RECHERCHES --------------------*/
 .filters {
     display: flex;
     align-items: center;
@@ -142,8 +145,7 @@ main {
 
 /* Elément span "Filtres" */
 .filters span {
-    padding: 9px 15px 9px 50px;
-    
+    padding: 9px 15px 9px 0px;
 }
 
 .filters span:first-child {
@@ -155,15 +157,14 @@ main {
     align-items: center;
     margin-right: 30px;
     cursor: pointer;
-	transform: scale(1);
-	transition: .3s ease-in-out;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
     margin-top: 20px;
     border: 2px solid var(--clr-light-grey);
     border-radius: 50px;
 }
 
 .filters i {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,20 +173,18 @@ main {
     width: 10px;
     height: 10px;
     border-radius: 50px;
-    position: absolute;
-    background-color: var(--clr-light-blue)
+    background-color: var(--clr-light-blue);
 }
-
 
 .filter:hover {
-    transform: scale(1.10);
+    transform: scale(1.1);
 }
 
-
-/* -------------------------Plus de 500 logements -------------------------*/
- .infos {
+/* ------------------------Plus de 500 logements ---------------------*/
+.infos {
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .infos i {
@@ -199,6 +198,7 @@ main {
     border-radius: 50px;
     border: 1px solid var(--clr-light-grey);
     margin-right: 10px;
+
     font-size: 12px;
 }
 
@@ -208,28 +208,25 @@ main {
 /* Section "accomodation" */
 .accomodation {
     display: flex;
-    flex-wrap: nowrap;
-    
-    /* flex-wrap: wrap-reverse; */
-    
+    flex-wrap: wrap-reverse;
 }
 
 /* Div accomodation city */
 .accomodation-city {
-    border-radius: 25px;
+    width: 60%;
     display: flex;
+    border-radius: 25px;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 60%;
-    padding: 5px;
+    align-items: start;
+
+    /* padding: 5px; */
     background-color: var(--clr-light-grey);
-    
 }
 
 /* prend toute la largeur du bloc */
-.accomodation-city h2{
+.accomodation-city h2 {
     width: 96%;
-    margin-left: 4%;
 }
 
 /*
@@ -243,91 +240,94 @@ Etoiles bleues ou grises
 
 /* Carte hébergement */
 .accomodation-card {
-    margin-bottom: 10px;
-    height: 190px;
+    margin-bottom: 20px;
+    /* height: 100%; */
     width: 27%;
     border: white 4px solid;
     background-color: white;
     border-radius: 20px;
 }
 
-.more{
+.more {
     width: 96%;
     margin-left: 4%;
     margin-bottom: 10px;
+    font-weight: bolder;
 }
 
 /* Carte hébergement : image */
 .accomodation-card img {
-    height: 60%;
+    height: 120px;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-
 /* Carte hébergement : détails */
 .accomodation-card-details {
-    height: 40%;
+    /* height: 40%; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-left: 15px;
-
+    padding: 0 10px;
 }
 
-.accomodation-card-details h3{
+.accomodation-card-details h3 {
     margin: 0;
+    font-size: 14px;
+    font-weight: bolder;
 }
 
-.accomodation-card-details p {
-    margin: 0;
-}
 
 /* 3.3 Section : results popular */
 /* pourcentage taille par rapport au parent */
 .popular {
-    width: 25%; 
-    padding: 10px;
+    width: 25%;
+    padding: 30px;
     margin-left: 50px;
     border-radius: 25px;
     background-color: var(--clr-light-grey);
 }
 
+.popular h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
 .popular-card {
+    display: flex;
+    flex-direction: row;
     border: var(--clr-light-blue) 1px solid;
     background-color: white;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
 
+.popular-card img {
+    height: 130px;
+    width: 35%;
+    object-fit: cover;
+    border-radius: 25px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .popular-card-details {
     width: 60%;
+    padding: 0 10px;
 }
-
-.popular-card img {
-    height: 20px;
-    width: 40%;
-    object-fit: cover;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-
-
-
-/* -------------------------3.4 Section : results activity -------------------------*/
+/* -----------------3.4 Section : results activity -------------------*/
 /* Activity */
 
-.activities {
+/* /* .activities {
     background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 60px;
-    max-width: 1440px; 
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -335,9 +335,9 @@ Etoiles bleues ou grises
     justify-content: space-between;
 }
 
-.activity-card{
+.activity-card {
     border: var(--clr-light-blue) solid thin;
-    border-radius: 20px ;
+    border-radius: 20px;
     text-decoration: none;
     color: black;
     font-size: small;
@@ -348,37 +348,42 @@ Etoiles bleues ou grises
     transition: width 1s, transform 1s;
 }
 
-.activity__card__link:hover{
-    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.activity__card__link:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.05);
-    color: var(--clr-light-grey);
-}
-
-
-
-
-/* ------------------------------------------- */
- /* Footer */
-
- footer {
-    width: 100%;
-    background-color: var(--clr-light-grey);
+    color: var(--clr-light-grey); */
+*/ .activities {
+    background-color: white;
     display: flex;
-    justify-content: space-between;   
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
     max-width: 1440px;
-    padding: 0 20px 30px 20px;
-    margin: auto;
-    margin-bottom: 10px;
 }
 
+/* ----------------------- FOOTER -------------------- */
 
-.footer-section {
-    padding: 15px;
-    width: 30%;
-    
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 50px 0 50px 0;
+    background-color: var(--clr-light-grey);
 }
 
-.footer-section ul {
+footer div {
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    width: 100%;
+}
+
+ul {
     list-style-type: none;
 }
 
+footer h6 {
+    margin-bottom: 20px;
+}
+footer li {
+    margin-bottom: 10px;
+}

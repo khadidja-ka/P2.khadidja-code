@@ -250,3 +250,18 @@ La propriété align-items définit toutes les valeurs align-self en tant que gr
 flex: grow shrink basis;
 object-fit: cover;
  */
+
+ <!-- Article card example
+<div class='flex-row'>
+    <!-- Card -->
+    <div class='flex-column'>
+        <img style='height: 150px; width: 100%'/>
+        <!-- Description (title, price...) -->
+        <div style='padding: 3px 6px;'>
+            <p>Nom de l'hôtel</p>
+            <p>prix</p>   
+            <p>étoiles</p>   
+        </div> 
+    </div>
+</div>
+</html> -->
