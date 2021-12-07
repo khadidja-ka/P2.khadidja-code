@@ -20,6 +20,11 @@
     --roundness: ;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 /*----------------------- 1. GENERAL ---------------------------- */
 * {
     font-family: "Raleway", sans-serif;
@@ -329,37 +334,59 @@ Etoiles bleues ou grises
     display: flex;
     flex-direction: row;
     flex-wrap:nowrap;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     max-width: 1440px;
-    margin-top: 100px;
+    gap: 40px;   
+    height: 500px;
+    /* height: '100%'; */
+    /* align-items: stretch; */
+}
+
+.activities-container{
+    margin-top: 60px;
+    height: 100%;
+}
+
+
+.activity-container {
+    flex: 1;
+    height: 100%;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 2px 20px 0px rgba(0,0,0,0.2);
+    /* max-height: 500px; */
+    /* max-height: 300px; */
+
+}
+
+.activity-title {
+    padding: 0 10px;
 }
 
 .activity-card {
-    border: #DEEBFF solid thin;
-    border-radius: 20px ;
-    text-decoration: none;
-    color: black;
-    font-size: small;
+    /* flex: 1; */
+    /* height: 100%; */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
-    margin: 20px;
-
-}
-
-.activities img {
-    width: 350px;
-}
-
-.firstSection {
     height: 100%;
 }
-.activity_card :hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transform: scale(1.05);
-    color: var(--clr-light-grey);
 
+.activity-container.column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 25px;
 }
+
+.activity-card img {
+    width: 100%;
+    height: 85%;
+    /* max-height: 50px; */
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
 /* ----------------------- FOOTER -------------------- */
 
 footer {
@@ -386,3 +413,9 @@ footer h6 {
 footer li {
     margin-bottom: 10px;
 }
+
+/* .big {max-height: 600px;} 
+.small-1 {max-height: 320px;}
+.small-2 {max-height: 220px;}
+.small-3 {max-height: 260px;}
+.small-4 {max-height: 275px;} */
