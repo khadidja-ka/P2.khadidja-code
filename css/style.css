@@ -20,14 +20,20 @@
     --roundness: ;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-}
+
+
 
 /*----------------------- 1. GENERAL ---------------------------- */
 * {
     font-family: "Raleway", sans-serif;
+}
+
+html, body {
+    width: 100%;
+}
+
+main {
+    margin: 0 3.5%;
 }
 
 p {
@@ -81,9 +87,7 @@ header {
     margin: 0 3.5%;
 }
 
-main {
-    margin: 0 3.5%;
-}
+
 
 /* -----------------------3.1 Section : search ---------------------*/
 
@@ -216,12 +220,13 @@ main {
 .accomodation {
     display: flex;
     flex-wrap: wrap-reverse;
+    justify-content: space-between;
     
 }
 
 /* Div accomodation city */
 .accomodation-city {
-    width: 60%;
+    width: 70%;
     display: flex;
     border-radius: 25px;
     flex-wrap: wrap;
@@ -291,9 +296,8 @@ Etoiles bleues ou grises
 /* 3.3 Section : results popular */
 /* pourcentage taille par rapport au parent */
 .popular {
-    width: 27%;
+    width: 25%;
     padding: 30px;
-    margin-left: 50px;
     border-radius: 25px;
     background-color: var(--clr-light-grey);
 }
@@ -328,69 +332,151 @@ Etoiles bleues ou grises
 }
 /* -----------------3.4 Section : results activity -------------------*/
 
-.activities {
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    margin-bottom: 30px;
-    max-width: 1440px;
-    gap: 40px;   
-    height: 500px;
-    /* height: '100%'; */
-    /* align-items: stretch; */
-}
-
-.activities-container{
+/* Section Activités */
+.activity-section {
     margin-top: 60px;
     height: 100%;
 }
 
+/* Titre section Activités */
+.activity-section h2 {
+ 
+}
 
+/* Container des 4 colonnes */
 .activity-container {
-    flex: 1;
+    height: 600px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+/* Colonne qui contient les cartes */
+.activity-column { 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    justify-content: space-between;
+}
+
+/* lien (a) compris comme parent pour le calcul de la height */
+.big-link { 
+    height: 100%;
+}
+
+.small-link-one{
+    height: 50%;
+}
+
+.small-link-two {
+    height: 40%;
+}
+
+.small-link-three {
+    height: 45%;
+}
+
+.small-link-four { 
+    height: 45%;
+}
+
+
+/*
+Section container : 600px
+    Colonne : height : 100%
+        Lien : height : 100%
+            Article : height: 100%
+
+Section container : 600px
+    Colonne : height : 100%
+        Lien 1 : height : 55%
+            Article 1: height: 100% - 1000px
+                Image article 1 90% - 900px
+                h3 Article 1    10% - 100px - font : 20px
+
+            Article 1: height: 100% - 300px
+                Image article 1 90% - 270px
+                h3 Article 1    10% - 30px - font-size : 40px
+
+
+        [Reste : 10% d'espace entre Lien 1 et Lien 2]
+        Lien 2 : height : 35%
+            Article 2: height: 100%
+
+
+        Dans ma carte, je veux que le h3 ait toujours la place de s'afficher.
+        Pour ça je peux définir une hauteur en pixels qui soit plus grande que la taille du texte.
+        Si mon h3 a une font-size de 30px, il faut que la height fasse minimum 30px.
+        Le problème est que si je mets 10% de height au h3, parfois ça peut descendre en dessous de 30px (si ma carte est très petite)
+        
+*/
+
+/* Carte activité */
+.activity-card {
     height: 100%;
     background: white;
     border-radius: 25px;
     box-shadow: 0 2px 20px 0px rgba(0,0,0,0.2);
-    /* max-height: 500px; */
-    /* max-height: 300px; */
-
-}
-
-.activity-title {
-    padding: 0 10px;
-}
-
-.activity-card {
-    /* flex: 1; */
-    /* height: 100%; */
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.activity-container.column {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    gap: 25px;
 }
 
 .activity-card img {
     width: 100%;
-    height: 85%;
-    /* max-height: 50px; */
+    height: calc(100% - 55px);
+    /* fonction qui permet de faire le calcul % - px */
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 }
+
+.activity-title {
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.activity-title h3 {
+    margin-left: 25px;
+    font-size: 20px;
+    
+}
+
+
+
+/* <div class="container">
+    <h3>Bonjour<h3>
+
+</div>
+
+
+img 
+_________________
+|               |
+|               |
+|h3             |
+|_______________|
+
+*/
+
+.container {
+    display: flex;
+    align-items: center
+}
+
+.h3 {
+
+}
+ */
 
 /* ----------------------- FOOTER -------------------- */
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 50px 0 50px 0;
@@ -414,7 +500,7 @@ footer li {
     margin-bottom: 10px;
 }
 
-/* .big {max-height: 600px;} 
+/* . {max-height: 600px;} 
 .small-1 {max-height: 320px;}
 .small-2 {max-height: 220px;}
 .small-3 {max-height: 260px;}

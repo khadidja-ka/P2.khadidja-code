@@ -265,3 +265,5 @@ object-fit: cover;
     </div>
 </div>
 </html> -->
+
+CMD shift L pour selectionner et effacer en meme temps

@@ -8,7 +8,7 @@
     <!-- importer font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a1004fc18d.js" crossorigin="anonymous"></script>
     <!-- lier les fichiers css a mon fichier html -->
     <link rel="stylesheet" href="css/media.css">
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- titre qu'on voit sur la barre de navigation -->
     <title>Booki by khadidja</title>
-
 </head>
 
 <body>
@@ -27,8 +26,8 @@
             <img src="img/logo/Booki.png" alt="Logo de Booki">
             <!-- liens -->
             <div class="menu">
-                <a class="menu-link" href="#accommodations">Hébergements</a>
-                <a class="menu-link" href="#activities">Activités</a>
+                <a class="menu-link" href="#accomodation">Hébergements</a>
+                <a class="menu-link" href="#activity-section">Activités</a>
             </div>
         </nav>
     </header>
@@ -73,9 +72,9 @@
         </section>
 
 
-    <!----------------- Section Hébergements à Marseille --------------->
-    
-        <section class="accomodation">
+        <!----------------- Section Hébergements à Marseille --------------->
+
+        <section id="accomodation" class="accomodation">
             <section class="accomodation-city">
                 <h2>Hébergements à Marseille</h2>
                 <article class="accomodation-card">
@@ -178,7 +177,7 @@
 
 
             </section>
-    <!--------------- Section Les plus populaires ------------------->
+            <!--------------- Section Les plus populaires ------------------->
 
             <div class="popular">
                 <h3>Les plus populaires <i class="fas fa-chart-line"></i> </h3>
@@ -240,58 +239,108 @@
         <!-- CMD+Shift+P go to maching pair -->
         <!---------------------------- ACTIVITÉS  ------------------------>
 
-        <section class="activities-container">
+            <!-- <section class="activity-section">
+                <h2></h2>
+                <div class="activity-container">
+                    <div class="activity-column">
+                        <article class="activity-card">
+                            <img>
+                            <h3></h3>
+                        </article>
+                    </div>
+                    <div class="activity-column">
+                        <article class="activity-card">
+                            <img>
+                            <h3></h3>
+                        </article>
+                        <article class="activity-card"></article>
+                        
+                    </div>
+                    <div class="activity-column">
+                        <article class="activity-card"></article>
+                    </div>
+                    <div class="activity-column">
+                        <article class="activity-card"></article>
+                        <article class="activity-card"></article>
+                    </div>
+                </div>
+            </section> -->
+
+        <section id="activity-section" class="activity-section">
             <h2>Activités à Marseille</h2>
-            <div class="activities">
-                <article class='activity-container'>
-                    <div href="#" class='activity-card'>
-                        <img src="img/activites/4_small/vieuxport.jpg" alt="Vieux Port">
-                        <h3 class='activity-title'>Vieux Port</h3>
-                    </div>
-                </article>
 
-                <div class='activity-container column'>
-                    <article class='activity-container'>
-                        <div href="#" class='activity-card'>
+            <!-- Contient les 4 colonnes -->
+            <div class="activity-container">
+                <!-- Colonne 1 -->
+                <div class="activity-column">
+                    <!-- Carte 1 : grande carte -->
+                    <a class="big-link" href="#">
+                        <article class="activity-card big-card">
+                            <img src="img/activites/4_small/vieuxport.jpg" alt="Vieux Port">
+                            <div class="activity-title">
+                            <h3>Vieux Port</h3>
+                        </div>
+                        </article>
+                    </a>
+                </div>
+
+                <!-- Colonne 2 -->
+                <div class="activity-column">
+                    <!-- Carte 2 -->
+                    <a class="small-link-one" href="#">
+                        <article class="activity-card small-one">
                             <img src="img/activites/4_small/pomegues.jpg" alt="Fort de Pomègues">
-                            <h3 class='activity-title'>Fort de Pomègues</h3>
-                        </div>
-                    </article>
-                      
-                    <article class='activity-container small'>
-                        <div href="#" class="activity-card">
+                            <div class='activity-title'>
+                                <h3>Fort de Pomègues</h3>
+                            </div>
+                        </article>
+                     </a>
+                    <!-- Carte 3 -->
+                    <a class="small-link-two" href="#">
+                        <article class='activity-card small-two'>
                             <img src="img/activites/4_small/frioul.jpg" alt="Îles du Frioul">
-                            <h3 class='activity-title'>Îles du Frioul</h3>
-                        </div>
-                    </article>
+                            <div class="activity-title">
+                                <h3>Îles du Frioul</h3>
+                            </div>
+                        </article>
+                    </a>
                 </div>
-               
 
+                <!-- Colonne 3 --> 
+                <div class="activity-column">
+                <!-- Carte 4 : grande carte -->
+                    <a class="big-link" href="#">
+                        <article class='activity-card big-card'>
+                            <img src="img/activites/4_small/calanques.jpg" alt="Parc National des Calanques">
+                            <div class="activity-title">
+                                <h3>Parc National des Calanques</h3>
+                            </div>
+                        </article>
+                    </a>
+                </div>
 
-                <article class='activity-container'>
-                    <div href="#" class='activity-card'>
-                        <img src="img/activites/4_small/calanques.jpg" alt="Parc National des Calanques">
-                        <h3 class='activity-title'>Parc National des Calanques</h3>
-                    </div>
-                </article>
-
-                <div class='activity-container column'>
-                    <article class='activity-container'>
-                        <div href="#" class='activity-card'>
+                <!-- Colonne 4 -->
+                <div class="activity-column">
+                    <!-- Carte 5 -->
+                    <a class="small-link-three" href="#">
+                        <article class='activity-card small-three'>
                             <img src="img/activites/4_small/notredame.jpg" alt="Notre-Dame-de-la-Garde">
-                            <h3 class='activity-title'>Notre-Dame-de-la-Garde</h3>
-                        </div>
-                    </article>
+                            <div class="activity-title">
+                                <h3>Notre-Dame-de-la-Garde</h3>
+                            </div>
+                     </article>
+                    </a>
 
-                    
-                    <article class='activity-container'>
-                        <div href="#" class='activity-card'>
+                    <!-- Carte 6 -->
+                    <a class="small-link-four" href="#">
+                        <article class='activity-card small-four'>
                             <img src="img/activites/4_small/longchamp.jpg" alt="Parc Longchamp">
-                            <h3 class='activity-title'>Parc Longchamp</h3>
-                        </div>
+                            <div class="activity-title">
+                                <h3>Parc Longchamp</h3>
+                            </div> 
                     </article>
+                    </a>
                 </div>
-
             </div>
         </section>
     </main>
