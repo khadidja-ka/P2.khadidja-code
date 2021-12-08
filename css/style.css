@@ -219,23 +219,21 @@ header {
 /* Section "accomodation" */
 .accomodation {
     display: flex;
-    flex-wrap: wrap-reverse;
     justify-content: space-between;
-    
 }
 
 /* Div accomodation city */
 .accomodation-city {
-    width: 70%;
+    width: 65%;
     display: flex;
     border-radius: 25px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: start;
-
-    /* padding: 5px; */
     background-color: var(--clr-light-grey);
 }
+
+
 
 /* prend toute la largeur du bloc */
 .accomodation-city h2 {
@@ -295,8 +293,9 @@ Etoiles bleues ou grises
 
 /* 3.3 Section : results popular */
 /* pourcentage taille par rapport au parent */
+
 .popular {
-    width: 25%;
+    width: 28%;
     padding: 30px;
     border-radius: 25px;
     background-color: var(--clr-light-grey);
@@ -427,8 +426,8 @@ Section container : 600px
 
 .activity-card img {
     width: 100%;
-    height: calc(100% - 55px);
-    /* fonction qui permet de faire le calcul % - px */
+    height: calc(100% - 55px); 
+    /* fonction qui permet de faire le calcul % - px l'unité de la valeur qui est retournée est la premiere valeur qu'on lui donne ( %)*/
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 }
@@ -441,41 +440,39 @@ Section container : 600px
 
 .activity-title h3 {
     margin-left: 25px;
-    font-size: 20px;
-    
+    font-size: 15px;
 }
 
 /* ----------------------- FOOTER -------------------- */
-.test {
-    background-color: red;
-}
 
 footer {
     display: flex;
+    justify-content: space-between;
     background-color: var(--clr-light-grey);
+    padding: 0 3.5%;
+    
 }
 
-footer div {
-
+.footer-section {
+    
+    /* background-color: #c1c1c1; */
+    width: calc(100% / 3);
 }
+
+/*3.5% + 33% 3.5% + 3.5% 33 % + 3.5% + 3.5% 33 % + 3.5% */
 
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
-footer h6 {
-    
+footer h3 {
+    font-size: 16px;
     margin-bottom: 20px;
 }
 footer li {
     margin-bottom: 10px;
 }
-
-/* . {max-height: 600px;} 
-.small-1 {max-height: 320px;}
-.small-2 {max-height: 220px;}
-.small-3 {max-height: 260px;}
-.small-4 {max-height: 275px;} */
 
 /*
 Desktop
