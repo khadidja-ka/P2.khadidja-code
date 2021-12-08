@@ -20,9 +20,6 @@
    
 }
 
-
-
-
 /*----------------------- 1. GENERAL ---------------------------- */
 * {
     font-family: "Raleway", sans-serif;
@@ -41,8 +38,8 @@ p {
 }
 
 a {
-    text-decoration: none; /*texte non surligné*/
-    color: inherit; /*enleve la couleur bleu des liens */
+    text-decoration: none; /* liens non soulignés */
+    color: inherit; /* enleve la couleur bleue des liens */
 }
 
 .fas.fa-star.active {
@@ -86,8 +83,6 @@ nav img {
 header {
     margin: 0 3.5%;
 }
-
-
 
 /* -----------------------3.1 Section : search ---------------------*/
 
@@ -233,26 +228,14 @@ header {
     background-color: var(--clr-light-grey);
 }
 
-
-
 /* prend toute la largeur du bloc */
 .accomodation-city h2 {
     width: 96%;
 }
 
-/*
-Trop d'espace entre image et bordure
-Carte plus large
-Trop d'espace entre les éléments dans la partie "détails"
-Majuscule, en gras, texte trop gros
-Nuit à partir de 25€ : 25€ en gras
-Etoiles bleues ou grises
-*/
-
 /* Carte hébergement */
 .accomodation-card {
     margin-bottom: 20px;
-    /* height: 100%; */
     width: 27%;
     border: white 4px solid;
     background-color: white;
@@ -277,7 +260,6 @@ Etoiles bleues ou grises
 
 /* Carte hébergement : détails */
 .accomodation-card-details {
-    /* height: 40%; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -289,7 +271,6 @@ Etoiles bleues ou grises
     font-size: 14px;
     font-weight: bolder;
 }
-
 
 /* 3.3 Section : results popular */
 /* pourcentage taille par rapport au parent */
@@ -329,8 +310,8 @@ Etoiles bleues ou grises
     width: 60%;
     padding: 0 10px;
 }
-/* -----------------3.4 Section : results activity -------------------*/
 
+/* -----------------3.4 Section : results activity -------------------*/
 /* Section Activités */
 .activity-section {
     margin-top: 60px;
@@ -344,7 +325,7 @@ Etoiles bleues ou grises
 
 /* Container des 4 colonnes */
 .activity-container {
-    height: 600px;
+    height: 550px;
     width: 100%;
     background-color: white;
     display: flex;
@@ -383,7 +364,6 @@ Etoiles bleues ou grises
 .small-link-four { 
     height: 45%;
 }
-
 
 /*
 Section container : 600px
@@ -450,16 +430,11 @@ footer {
     justify-content: space-between;
     background-color: var(--clr-light-grey);
     padding: 0 3.5%;
-    
 }
 
 .footer-section {
-    
-    /* background-color: #c1c1c1; */
     width: calc(100% / 3);
 }
-
-/*3.5% + 33% 3.5% + 3.5% 33 % + 3.5% + 3.5% 33 % + 3.5% */
 
 ul {
     list-style-type: none;
@@ -478,6 +453,7 @@ footer li {
 Desktop
 max : 1440px
 min : 993px
+
 |                         |
 |                         |
 |                         |
