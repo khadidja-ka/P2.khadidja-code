@@ -58,3 +58,19 @@ préprocesseur CSS (type Sass ou Less) ne doit être utilisé.
 Google Chrome et de Mozilla Firefox. Il faudra tester le prototype sur
 ces deux navigateurs.
 ● Le code ne doit pas être versionné avec Git.
+
+
+/* <div class="container">
+    <h3>Bonjour<h3>
+
+</div>
+
+
+img 
+_________________
+|               |
+|               |
+|h3             |
+|_______________|
+
+*/

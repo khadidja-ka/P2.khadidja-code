@@ -17,7 +17,7 @@
     --clr-blue: #0065fc;
     --clr-light-blue: #deebff;
     --clr-light-grey: #f2f2f2;
-    --roundness: ;
+   
 }
 
 
@@ -445,48 +445,18 @@ Section container : 600px
     
 }
 
-
-
-/* <div class="container">
-    <h3>Bonjour<h3>
-
-</div>
-
-
-img 
-_________________
-|               |
-|               |
-|h3             |
-|_______________|
-
-*/
-
-.container {
-    display: flex;
-    align-items: center
-}
-
-.h3 {
-
-}
- */
-
 /* ----------------------- FOOTER -------------------- */
+.test {
+    background-color: red;
+}
 
 footer {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 50px 0 50px 0;
     background-color: var(--clr-light-grey);
 }
 
 footer div {
-    margin-left: 3.5%;
-    margin-right: 3.5%;
-    width: 100%;
+
 }
 
 ul {
@@ -494,6 +464,7 @@ ul {
 }
 
 footer h6 {
+    
     margin-bottom: 20px;
 }
 footer li {
@@ -505,3 +476,29 @@ footer li {
 .small-2 {max-height: 220px;}
 .small-3 {max-height: 260px;}
 .small-4 {max-height: 275px;} */
+
+/*
+Desktop
+max : 1440px
+min : 993px
+|                         |
+|                         |
+|                         |
+|                         |
+
+Tablette
+max 992 px
+min 769 px
+|           |
+|           |
+|           |
+
+Mobile
+max 768 px
+|  |
+|  |
+|  |
+|  |
+|  |
+
+*/
