@@ -56,8 +56,8 @@ nav {
 }
 
 nav img {
-    width: 80x;
-    height: 80px;
+    width: 124px;
+    height: 53px;
 }
 
 .menu {
@@ -130,6 +130,7 @@ header {
     border: 1px solid var(--clr-light-grey);
     background-color: var(--clr-blue);
     color: white;
+    font-weight: bold;
 }
 
 .search-button-mobile {
@@ -151,7 +152,7 @@ header {
 
 /* Elément span "Filtres" */
 .filters span {
-    padding: 9px 15px 9px 0px;
+    padding: 9px 15px 9px 9px;
 }
 
 .filters span:first-child {
@@ -172,12 +173,12 @@ header {
 
 .filters i {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     color: var(--clr-blue);
     padding: 15px;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50px;
     background-color: var(--clr-light-blue);
 }
@@ -271,7 +272,7 @@ header {
 
 .accomodation-card-details h3 {
     margin: 0;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: bolder;
 }
 
@@ -308,7 +309,7 @@ header {
     height: 130px;
     width: 35%;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -372,35 +373,7 @@ header {
     height: 45%;
 }
 
-/*
-Section container : 600px
-    Colonne : height : 100%
-        Lien : height : 100%
-            Article : height: 100%
 
-Section container : 600px
-    Colonne : height : 100%
-        Lien 1 : height : 55%
-            Article 1: height: 100% - 1000px
-                Image article 1 90% - 900px
-                h3 Article 1    10% - 100px - font : 20px
-
-            Article 1: height: 100% - 300px
-                Image article 1 90% - 270px
-                h3 Article 1    10% - 30px - font-size : 40px
-
-
-        [Reste : 10% d'espace entre Lien 1 et Lien 2]
-        Lien 2 : height : 35%
-            Article 2: height: 100%
-
-
-        Dans ma carte, je veux que le h3 ait toujours la place de s'afficher.
-        Pour ça je peux définir une hauteur en pixels qui soit plus grande que la taille du texte.
-        Si mon h3 a une font-size de 30px, il faut que la height fasse minimum 30px.
-        Le problème est que si je mets 10% de height au h3, parfois ça peut descendre en dessous de 30px (si ma carte est très petite)
-        
-*/
 
 /* Carte activité */
 .activity-card {
@@ -417,6 +390,30 @@ Section container : 600px
     /* fonction qui permet de faire le calcul % - px l'unité de la valeur qui est retournée est la premiere valeur qu'on lui donne ( %)*/
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
+}
+
+.big-link:hover{
+    transform: scale(1.05);
+}
+
+.small-one{
+    transform: scale(1.05);
+}
+
+.small-two{
+    transform: scale(1.05);
+}
+
+.small-three{
+    transform: scale(1.05);
+}
+
+.small-link-four{
+    transform: scale(1.05);
+}
+
+.activity-card:hover{
+    transform: scale(1.05);
 }
 
 .activity-title {
@@ -436,7 +433,7 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: var(--clr-light-grey);
-    padding: 0 3.5%;
+    padding: 20px 3.5%;
 }
 
 .footer-section {

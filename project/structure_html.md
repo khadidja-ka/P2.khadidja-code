@@ -267,3 +267,63 @@ object-fit: cover;
 </html> -->
 
 CMD shift L pour selectionner et effacer en meme temps
+
+<!-- CMD+Shift+P go to maching pair -->
+        <!---------------------------- ACTIVITÉS  ------------------------>
+
+            <!-- <section class="activity-section">
+                <h2></h2>
+                <div class="activity-container">
+                    <div class="activity-column">
+                        <article class="activity-card">
+                            <img>
+                            <h3></h3>
+                        </article>
+                    </div>
+                    <div class="activity-column">
+                        <article class="activity-card">
+                            <img>
+                            <h3></h3>
+                        </article>
+                        <article class="activity-card"></article>
+                        
+                    </div>
+                    <div class="activity-column">
+                        <article class="activity-card"></article>
+                    </div>
+                    <div class="activity-column">
+                        <article class="activity-card"></article>
+                        <article class="activity-card"></article>
+                    </div>
+                </div>
+            </section> -->
+
+            /*
+Section container : 600px
+    Colonne : height : 100%
+        Lien : height : 100%
+            Article : height: 100%
+
+Section container : 600px
+    Colonne : height : 100%
+        Lien 1 : height : 55%
+            Article 1: height: 100% - 1000px
+                Image article 1 90% - 900px
+                h3 Article 1    10% - 100px - font : 20px
+
+            Article 1: height: 100% - 300px
+                Image article 1 90% - 270px
+                h3 Article 1    10% - 30px - font-size : 40px
+
+
+        [Reste : 10% d'espace entre Lien 1 et Lien 2]
+        Lien 2 : height : 35%
+            Article 2: height: 100%
+
+
+        Dans ma carte, je veux que le h3 ait toujours la place de s'afficher.
+        Pour ça je peux définir une hauteur en pixels qui soit plus grande que la taille du texte.
+        Si mon h3 a une font-size de 30px, il faut que la height fasse minimum 30px.
+        Le problème est que si je mets 10% de height au h3, parfois ça peut descendre en dessous de 30px (si ma carte est très petite)
+        
+*/
