@@ -233,6 +233,8 @@ header {
     width: 96%;
 }
 
+
+
 /* Carte hébergement */
 .accomodation-card {
     margin-bottom: 20px;
@@ -266,10 +268,15 @@ header {
     padding: 0 10px;
 }
 
+
 .accomodation-card-details h3 {
     margin: 0;
     font-size: 14px;
     font-weight: bolder;
+}
+
+.accomodation span{
+    font-weight: bold;
 }
 
 /* 3.3 Section : results popular */
