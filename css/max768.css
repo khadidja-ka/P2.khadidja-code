@@ -47,13 +47,22 @@
         border-top: none;
     }
 
+    .search-input{
+        font-size: 22px;
+    }
+
     .search-input {
         display: flex;
         
     }
 
     .search-button-mobile{
+        width: 40px;
+        height: 40px;
         display: initial;
+        color: white;
+        background-color: var(--clr-blue);
+        border-radius: 15px;
     }
 
     .search-button{
