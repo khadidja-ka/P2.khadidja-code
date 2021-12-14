@@ -8,3 +8,12 @@
 7. Footer
 */
 
+@media screen and (max-width: 992px) {
+
+    .main {
+        width: 100%;
+    }
+
+    
+    
+}

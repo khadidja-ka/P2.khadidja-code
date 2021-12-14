@@ -327,3 +327,12 @@ Section container : 600px
         Le problème est que si je mets 10% de height au h3, parfois ça peut descendre en dessous de 30px (si ma carte est très petite)
         
 */
+
+.git{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(175, 116, 230);
+    height: 10px;
+    width: 10px;
+} pour voir les mise à jour git

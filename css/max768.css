@@ -9,3 +9,116 @@
 */
 
 /* media queries phone */
+:root {
+    --clr-blue: #0065fc;
+    --clr-light-blue: #deebff;
+    --clr-light-grey: #f2f2f2;
+   
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo {
+        height: 85px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    .search p{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+
+
+    .menu {
+        min-width: 150px;
+    }
+
+    .menu-link:hover{
+        color: var(--clr-blue);
+        border-bottom: 2px solid var(--clr-blue);
+        border-top: none;
+    }
+
+    .search-input {
+        display: flex;
+        
+    }
+
+    .search-button-mobile{
+        display: initial;
+    }
+
+    .search-button{
+        display:none;
+    }
+
+
+
+    .accomodation {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* flex-wrap: wrap-reverse; */
+    }
+
+
+
+    .accomodation-city {
+        width: 100%;
+    }
+
+    .accomodation-card {
+        width: 100%;
+        display: flex;
+        flex: 1 0 auto;
+        align-self: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .popular {
+        width: 100%;
+    }
+
+    .popular-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        /* flex: 1 0 auto;
+        align-self: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: center; */
+    }
+
+    .activity-column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--clr-light-grey);
+    }
+
+    footer div {
+        margin: 0;
+        width: 96.5%;
+        padding-left: 3.5%;
+        margin-bottom: 30px;
+    }
+}

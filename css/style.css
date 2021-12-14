@@ -29,6 +29,8 @@ html, body {
     width: 100%;
 }
 
+
+
 main {
     margin: 0 3.5%;
 }
@@ -205,7 +207,6 @@ header {
     border-radius: 50px;
     border: 1px solid var(--clr-light-grey);
     margin-right: 10px;
-
     font-size: 12px;
 }
 
@@ -234,8 +235,6 @@ header {
 .accomodation-city h2 {
     width: 96%;
 }
-
-
 
 /* Carte hébergement */
 .accomodation-card {
@@ -378,8 +377,6 @@ header {
     height: 45%;
 }
 
-
-
 /* Carte activité */
 .activity-card {
     height: 100%;
@@ -465,3 +462,4 @@ max 768 px
 |  |
 
 */
+
