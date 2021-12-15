@@ -19,9 +19,11 @@
 @media screen and (max-width: 768px) {
 
  
-
+     /* ---------------------HEADER------------------------ */
     .logo {
-        height: 85px;
+        width: 90px;
+        height: 50px;
+        margin-top: 20px;
     }
 
     nav {
@@ -32,30 +34,48 @@
         margin-bottom: 50px;
     }
 
-    .search p{
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-
-
-
-    .menu {
-        min-width: 150px;
-    }
-
-    .menu-link:hover{
+     .menu-link:hover{
         color: var(--clr-blue);
         border-bottom: 2px solid var(--clr-blue);
         border-top: 2px solid white;
     }
+ 
+ 
+    .filters {
+        /* size: 30px; */
+    }
 
+
+    /* -----------------------SEARCH------------------------ */
+
+    .search h1{
+        font-size: 25px;
+    }
+
+    .search p{
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    .holder {
+        font-size: 15px;
+    }
+
+  
+    .menu {
+        min-width: 150px;
+    }
+
+   
     .search-input{
+        display: flex;
         font-size: 22px;
     }
 
-    .search-input {
-        display: flex;
-        
+    
+
+    .search-button{
+        display:none;
     }
 
     .search-button-mobile{
@@ -68,19 +88,24 @@
         border: none;
     }
 
-    .search-button{
-        display:none;
+    
+   .infos{
+        font-size: 14px;
     }
 
 
+
+    /* ---------------------ACCOMODATION---------------------- */
 
     .accomodation {
         
         flex-direction: column;
-        flex-wrap: wrap-reverse;
-        background-color: white;
+        
     }
 
+    .accomodation h2{
+        font-size: 23px;
+    }
 
 
     .accomodation-city {
@@ -99,27 +124,40 @@
         border: 1px solid var(--clr-light-grey);
     }
 
+    .rating{
+        font-size: ;
+    }
+
+   
+
+    /* ----------------------POPULAR--------------------- */
     .popular {
-    width: 100%;
+    
+    flex-direction: column;
+    width: auto;
     }
 
     .popular-card {
+       
         width: 100%;
         display: flex;
-        flex-direction: column;
+       
         
-        /* flex: 1 0 auto;
-        align-self: auto;
-        height: auto;
-        flex-direction: column;
-        justify-content: center; */
+
     }
 
-    .activity-column {
+
+  
+    /* --------------------ACTIVITY----------------------- */
+
+ .activity-column {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
+
+
+    /* -----------------------FOOTER---------------------- */
 
     footer {
         font-size: 15px;
