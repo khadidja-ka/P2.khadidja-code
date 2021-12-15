@@ -37,14 +37,12 @@
         border-top: 2px solid white;
     }
 
-    .filters {
-        /* size: 30px; */
-    }
 
     /* -----------------------SEARCH------------------------ */
 
     .search{
         width: 100%;
+        margin-left: 16px;
     }
 
     .search h1 {
@@ -132,9 +130,7 @@
     }
 
 
-    .rating {
-        /* font-size: ; */
-    }
+
 
     /* ----------------------POPULAR--------------------- */
     .popular {
@@ -148,46 +144,63 @@
         display: flex;
     }
 
+   
     /* --------------------ACTIVITY----------------------- */
 
-/* titre */
+    /* titre de la section*/
     .activity-section h2{
         font-size: 21px;
         margin-left: 20px;
     }
 
-    /* ca contient les 4 colonnes  */
-    .activity-container {
+    .activity-section{
+        display: flex;
         flex-direction: column;
-        height: 550px;
+        margin-top: 13px;
+        
     }
 
+    /* ca contient les 4 colonnes  */
+     .activity-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    } 
+
     /* les colonnes */
- .activity-column {
-        width: 100%;
+    .activity-column {
+        margin-left: 20px;
         margin-bottom: 25px;
-        width: 90%;
-      
+        width: 100%;
+ }
     /* prend tout ce qui se trouve dans la class activity column */
     .activity-column > * { 
-        margin-left: 20px;
+        
         width: 90%;
         
     }
 
    
-
+    .activity-card{
+        height: 185px;
+    }
+    
+    .small-one{
+        margin-bottom: 25px;
     }
 
+    .small-three{
+        margin-bottom: 25px;
+    }
    
 
     .activity-title {
         height: 50px;
     }
 
-    .activity-card img {
+    /* .activity-card img {
         height: calc(100% - 50px); 
-    }
+    } */
 
 
     /* -----------------------FOOTER---------------------- */
