@@ -13,13 +13,10 @@
     --clr-blue: #0065fc;
     --clr-light-blue: #deebff;
     --clr-light-grey: #f2f2f2;
-   
 }
 
 @media screen and (max-width: 768px) {
-
- 
-     /* ---------------------HEADER------------------------ */
+    /* ---------------------HEADER------------------------ */
     .logo {
         width: 90px;
         height: 50px;
@@ -34,25 +31,23 @@
         margin-bottom: 50px;
     }
 
-     .menu-link:hover{
+    .menu-link:hover {
         color: var(--clr-blue);
         border-bottom: 2px solid var(--clr-blue);
         border-top: 2px solid white;
     }
- 
- 
+
     .filters {
         /* size: 30px; */
     }
 
-
     /* -----------------------SEARCH------------------------ */
 
-    .search h1{
+    .search h1 {
         font-size: 25px;
     }
 
-    .search p{
+    .search p {
         font-size: 17px;
         margin-bottom: 30px;
     }
@@ -61,24 +56,20 @@
         font-size: 15px;
     }
 
-  
     .menu {
         min-width: 150px;
     }
 
-   
-    .search-input{
+    .search-input {
         display: flex;
         font-size: 22px;
     }
 
-    
-
-    .search-button{
-        display:none;
+    .search-button {
+        display: none;
     }
 
-    .search-button-mobile{
+    .search-button-mobile {
         width: 40px;
         height: 40px;
         display: initial;
@@ -88,25 +79,24 @@
         border: none;
     }
 
-    
-   .infos{
+    .infos {
         font-size: 14px;
+        margin-bottom: 10px;
     }
-
-
 
     /* ---------------------ACCOMODATION---------------------- */
 
     .accomodation {
-        
         flex-direction: column;
-        
     }
 
-    .accomodation h2{
+    .accomodation h2 {
         font-size: 23px;
     }
 
+    .accomodation-card-details p {
+        margin-top: 5px;
+    }
 
     .accomodation-city {
         width: 100%;
@@ -124,38 +114,29 @@
         border: 1px solid var(--clr-light-grey);
     }
 
-    .rating{
+    .rating {
         font-size: ;
     }
 
-   
-
     /* ----------------------POPULAR--------------------- */
     .popular {
-    
-    flex-direction: column;
-    width: auto;
+        flex-direction: column;
+        width: auto;
     }
 
     .popular-card {
-       
         width: 100%;
         display: flex;
-       
-        
-
     }
 
-
-  
     /* --------------------ACTIVITY----------------------- */
 
- .activity-column {
+    .activity-column {
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
     }
-
 
     /* -----------------------FOOTER---------------------- */
 
@@ -173,4 +154,4 @@
         padding-left: 3.5%;
         margin-bottom: 30px;
     }
-}
+
