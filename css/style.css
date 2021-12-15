@@ -17,7 +17,6 @@
     --clr-blue: #0065fc;
     --clr-light-blue: #deebff;
     --clr-light-grey: #f2f2f2;
-   
 }
 
 /*----------------------- 1. GENERAL ---------------------------- */
@@ -29,10 +28,10 @@ html, body {
     width: 100%;
 }
 
-
-
 main {
     margin: 0 3.5%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 p {
@@ -71,7 +70,6 @@ nav img {
     display: flex;
     justify-content: center;
     align-items: center;
-
     height: 90px; /* 90px parce que même hauteur que le logo */
     width: 190px;
     border-top: 2px solid #ffffff;
@@ -113,6 +111,7 @@ header {
 }
 
 /*----------------------- Champ de recherche ----------------------- */
+
 .search-input input {
     height: 35px;
     border: 1px solid var(--clr-light-grey);
@@ -143,7 +142,7 @@ header {
     transform: scale(1.05);
 }
 
-/* ----------------------- FILTRES DE RECHERCHES --------------------*/
+/* ----------------------- FILTRES DE RECHERCHE --------------------*/
 .filters {
     display: flex;
     align-items: center;
@@ -237,13 +236,14 @@ header {
 
 /* Carte hébergement */
 .accomodation-card {
-    
     margin-bottom: 20px;
     width: 185px;
     height: 200px;
     border: white 4px solid;
     background-color: white;
     border-radius: 20px;
+    box-shadow: var(--clr-light-grey);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .more {
@@ -311,6 +311,7 @@ header {
     padding: 5px;
     border-radius: 25px;
     margin-bottom: 25px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .popular-card img {
@@ -337,6 +338,7 @@ header {
 .activity-section {
     margin-top: 60px;
     height: 100%;
+    
 }
 
 /* Titre section Activités */
