@@ -18,6 +18,8 @@
 
 @media screen and (max-width: 768px) {
 
+ 
+
     .logo {
         height: 85px;
     }
@@ -44,7 +46,7 @@
     .menu-link:hover{
         color: var(--clr-blue);
         border-bottom: 2px solid var(--clr-blue);
-        border-top: none;
+        border-top: 2px solid white;
     }
 
     .search-input{
@@ -63,6 +65,7 @@
         color: white;
         background-color: var(--clr-blue);
         border-radius: 15px;
+        border: none;
     }
 
     .search-button{
@@ -72,16 +75,17 @@
 
 
     .accomodation {
-        display: flex;
+        
         flex-direction: column;
-        width: 100%;
-        /* flex-wrap: wrap-reverse; */
+        flex-wrap: wrap-reverse;
+        background-color: white;
     }
 
 
 
     .accomodation-city {
         width: 100%;
+        background-color: white;
     }
 
     .accomodation-card {
@@ -92,10 +96,11 @@
         height: auto;
         flex-direction: column;
         justify-content: center;
+        border: 1px solid var(--clr-light-grey);
     }
 
     .popular {
-        width: 100%;
+    width: 100%;
     }
 
     .popular-card {
