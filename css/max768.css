@@ -28,7 +28,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
     .menu-link:hover {
@@ -79,15 +79,20 @@
         border: none;
     }
 
+    .titreFiltre {
+        display: block;
+        width: 100%;
+    }
+
     .infos {
         font-size: 14px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     /* ---------------------ACCOMODATION---------------------- */
 
     .accomodation {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .accomodation h2 {
@@ -115,13 +120,14 @@
     }
 
     .rating {
-        font-size: ;
+        /* font-size: ; */
     }
 
     /* ----------------------POPULAR--------------------- */
     .popular {
         flex-direction: column;
         width: auto;
+        border-radius: 0;
     }
 
     .popular-card {
@@ -131,11 +137,24 @@
 
     /* --------------------ACTIVITY----------------------- */
 
+    .activity-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* prend tout ce qui se trouve dans la class activity column */
+    .activity-column > * { 
+        width: 100%;
+        height: 200px;
+    }
+
     .activity-column {
         width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .activity-column img {
+        height: 50%;
     }
 
     /* -----------------------FOOTER---------------------- */
@@ -154,4 +173,4 @@
         padding-left: 3.5%;
         margin-bottom: 30px;
     }
-
+}
