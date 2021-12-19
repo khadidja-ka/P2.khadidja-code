@@ -17,10 +17,10 @@
 
 @media only screen and (max-width: 992px) {
 
-    html {
-        margin-left: 10px;
+    /* body{
+        margin-left: 5px;
         
-    }
+    } */
 
     .accomodation{
         flex-direction: column;
